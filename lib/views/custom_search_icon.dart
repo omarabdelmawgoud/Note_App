@@ -15,7 +15,7 @@ class CustomSearchIcon extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
       ),
       child: Center(
-        child: const FaIcon(FontAwesomeIcons.magnifyingGlass, size: 28),
+        child: const Icon(FontAwesomeIcons.magnifyingGlass, size: 28),
       ),
     );
   }
