@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/constants.dart';
-import 'package:note_app/views/widgets/custom_text_field.dart';
+import 'package:note_app/views/widgets/note_bottom_sheet.dart';
 import 'package:note_app/views/widgets/notes_view_body.dart';
 
 class HomeView extends StatelessWidget {
@@ -27,18 +27,6 @@ class HomeView extends StatelessWidget {
         backgroundColor: kcolor,
         child: Icon(Icons.add),
       ),
-    );
-  }
-}
-
-class NoteBottomSheet extends StatelessWidget {
-  const NoteBottomSheet({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8),
-      child: Column(children: [SizedBox(height: 24), CustomTextField()]),
     );
   }
 }
