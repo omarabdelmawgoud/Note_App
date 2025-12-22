@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:note_app/constants.dart';
 
 class CustomSearchIcon extends StatelessWidget {
   const CustomSearchIcon({super.key});
@@ -9,9 +10,8 @@ class CustomSearchIcon extends StatelessWidget {
     return Container(
       height: 46,
       width: 46,
-      // ignore: deprecated_member_use
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(.2),
+        color: kcolor,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Center(

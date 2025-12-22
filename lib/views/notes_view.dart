@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/constants.dart';
+import 'package:note_app/views/widgets/custom_text_field.dart';
 import 'package:note_app/views/widgets/notes_view_body.dart';
 
 class HomeView extends StatelessWidget {
@@ -22,7 +24,7 @@ class HomeView extends StatelessWidget {
           );
         },
         shape: CircleBorder(),
-        backgroundColor: Colors.blue.shade300,
+        backgroundColor: kcolor,
         child: Icon(Icons.add),
       ),
     );
@@ -34,6 +36,9 @@ class NoteBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8),
+      child: Column(children: [SizedBox(height: 24), CustomTextField()]),
+    );
   }
 }
