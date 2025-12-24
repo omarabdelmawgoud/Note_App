@@ -13,4 +13,5 @@ final class AddNoteCubitFaliure extends AddNoteCubitState {
   final String errorMessage;
 
   AddNoteCubitFaliure({required this.errorMessage});
+  
 }
